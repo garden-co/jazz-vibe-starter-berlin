@@ -1,4 +1,6 @@
-# 📝 Todo App Example with Jazz and React + Vibe Coding Enabled
+# 📝 Jazz Vibe Coding Starter
+
+This repo was created using `npx create-jazz-app@latest --example todo` and it's a clone of a minimal Todo app example [(visit this page for more examples)](https://jazz.tools/examples). Users can use this as a starter project to build on top of.
 
 ## 🚀 Getting Started
 
@@ -26,11 +28,33 @@ Open [http://localhost:5173](http://localhost:5173) with your browser to see the
 3. 🆕 Creating a new todo project: [`src/3_NewProjectForm.tsx`](./src/3_NewProjectForm.tsx)
 4. 📋 Reactively rendering a todo project as a table, adding and editing tasks: [`src/4_ProjectTodoTable.tsx`](./src/4_ProjectTodoTable.tsx)
 
-### 🛠️ Helpers
+## 🤖 Write Jazz code with LLMs
 
-* (not yet explained) Creating Invite Links/QR codes with `<InviteButton/>`: [`src/components/InviteButton.tsx`](./src/components/InviteButton.tsx)
+The project contains 2 agentic flows designed to assist with Jazz development:
 
-This is the whole Todo List app!
+### Available Rules
+
+- **`generate-jazz-schema.mdc`** - Helps with generating a Jazz schema based on user input
+  - Example usage: *"generate the schema for a notes app"*
+  
+- **`jazz-general-help.mdc`** - Provides assistance with general Jazz questions
+  - Example usage: *"how do file uploads work in Jazz?"*
+
+### Integration Options
+
+#### With Cursor
+
+Both rules are automatically picked up and triggered by the Cursor Agent based on your request. Simply describe what you need, and the appropriate rule will be activated.
+
+#### With Bolt.new
+
+1. Clone this repository in Bolt by accessing this URL [https://bolt.new/\~/github.com/garden-co/jazz-vibe-starter-berlin](https://bolt.new/~/github.com/garden-co/jazz-vibe-starter-berlin)
+
+2. Reference a rule in your chat message:
+   ```
+   Use @.cursor/rules/generate-jazz-schema.mdc to generate a schema for a notes app
+   ```
+
 
 ## 💬 Questions / Problems / Feedback
 
@@ -47,19 +71,3 @@ npx jazz-run sync
 ```
 
 Then add the query param `?sync=ws://localhost:4200` to the URL of the example app (e.g., `http://localhost:5173/?peer=ws://localhost:4200`), or set the `sync` parameter of the `<JazzProvider>` component in [./src/2\_main.tsx](./src/2_main.tsx).
-
-## 🤖 Use with LLMs
-
-The project contains 2 agentic flows:
-
-* 📄 `.cursor/rules/generate-jazz-schema.mdc` – helps with generating a Jazz schema based on user input (e.g., "generate the schema for a notes app")
-* ❓ `.cursor/rules/jazz-general-help.mdc` – helps with general Jazz questions (e.g., "how do file uploads work in Jazz?")
-
-### 🖱️ With Cursor
-
-Both rules are picked up and triggered automatically by the Cursor Agent, based on the user's request.
-
-### ⚡ With Bolt.new
-
-* Clone this repo in Bolt by accessing: [https://bolt.new/\~/github.com/garden-co/jazz-vibe-starter-berlin](https://bolt.new/~/github.com/garden-co/jazz-vibe-starter-berlin)
-* Reference a rule in your chat message, e.g.: "`Use @.cursor/rules/generate-jazz-schema.mdc to generate a schema for a notes app`"
