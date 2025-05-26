@@ -92,8 +92,8 @@ You can also run a local sync server by running `npx jazz-run sync` and adding t
 ## Use with LLMs
 
 The project contains 2 agentic flows:
-- .cursor/rules/generate-jazz-schema.mdc - helps with generating a Jazz schema based on user input, for example: "generate the schema for a notes app"
-- .cursor/rules/jazz-general-help.mdc - helps with general Jazz questions, for example: "how do file uploads work in Jazz?"
+- `.cursor/rules/generate-jazz-schema.mdc` - helps with generating a Jazz schema based on user input, for example: "generate the schema for a notes app"
+- `.cursor/rules/jazz-general-help.mdc` - helps with general Jazz questions, for example: "how do file uploads work in Jazz?"
 
 ### With Cursor
 
@@ -101,5 +101,5 @@ Both rules are picked up and triggered automatically by the Cursor Agent, based 
 
 ### With Bolt.new
 
-- Clone our jazz-vibe-starter-berlin repo by accessing this URL: https://bolt.new/~/github.com/pax-k/jazz-vibe-starter-berlin
-- Reference the rules in your chat message, eg: "Use @.cursor/rules/generate-jazz-schema.mdc to generate a schema for a notes app"
+- Clone our jazz-vibe-starter-berlin repo by accessing this URL: https://bolt.new/~/github.com/garden-co/jazz-vibe-starter-berlin
+- Reference the rules in your chat message, eg: "`Use @.cursor/rules/generate-jazz-schema.mdc to generate a schema for a notes app`"
