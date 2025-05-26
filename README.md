@@ -101,5 +101,5 @@ Both rules are picked up and triggered automatically by the Cursor Agent, based 
 
 ### With Bolt.new
 
-- Clone our jazz-vibe-starter-berlin repo by accessing this URL: https://bolt.new/~/github.com/garden-co/jazz-vibe-starter-berlin
-- Reference the rules in your chat message, eg: "`Use @.cursor/rules/generate-jazz-schema.mdc to generate a schema for a notes app`"
+- Clone this repo in Bolt by accessing this URL: https://bolt.new/~/github.com/garden-co/jazz-vibe-starter-berlin
+- Reference a rule in your chat message, eg: "`Use @.cursor/rules/generate-jazz-schema.mdc to generate a schema for a notes app`"
