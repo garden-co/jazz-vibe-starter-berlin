@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "format-and-lint": "biome check .",
     "format-and-lint:fix": "biome check . --write",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postinstall": "echo '⚠️ Check the README.md file for important information.'"
   },
   "dependencies": {
     "@faker-js/faker": "^9.7.0",
@@ -21,8 +22,8 @@
     "jazz-tools": "^0.14.16",
     "lucide-react": "^0.274.0",
     "qrcode": "^1.5.3",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "react-router": "^6.16.0",
     "react-router-dom": "^6.16.0",
     "tailwind-merge": "^1.14.0",
@@ -31,8 +32,8 @@
   },
   "devDependencies": {
     "@types/qrcode": "^1.5.1",
-    "@types/react": "19.0.0",
-    "@types/react-dom": "19.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.27",
